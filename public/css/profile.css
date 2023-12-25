@@ -1,0 +1,253 @@
+.account__container{
+    /*border: 1px solid red;*/
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    /*height: 700px;*/
+    display: flex;
+    padding: 15px;
+
+    .account__block{
+        border-radius: 5px;
+        border: 1px solid #828282;
+        background: #1C3135;
+        width: 50%;
+        margin: 4px;
+        display: flex;
+        flex-direction: row;
+        padding: 10px 0px;
+
+        /*LEFT BLOCK*/
+
+        .account__info{
+            /*border: 1px solid green;*/
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            justify-content: center;
+
+            .title{
+                color: #fff;
+                font-size: 24px;
+                font-weight: 600;
+                letter-spacing: 0.48px;
+            }
+
+            .online__status{
+                color: #7BFF4D;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: 0.8px;
+            }
+
+            .avatar{
+                width: 127px;
+                height: 127px;
+                margin-bottom: 5px;
+            }
+
+            .account__link{
+                color: #fff;
+                font-size: 12px;
+                font-weight: 400;
+                text-decoration: underline;
+            }
+
+            .bold{
+                font-weight: 500;
+            }
+
+            .write__message__button{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 5px;
+                background: #3259A4;
+                padding: 8px 31px;
+                text-decoration: none;
+                transition-property: color, background, scale;
+                transition-duration: 200ms;
+            }
+
+            .write__message__button:hover{
+                width: 30%;
+                display: flex;
+                justify-content: center;
+                color: #000;
+                font-size: 16px;
+                font-weight: 400;
+                border-radius: 5px;
+                background: #4BE7AF;
+                padding: 8px 31px;
+                text-decoration: none;
+                scale: 1.05;
+            }
+
+            .reg__info__title{
+                color: #fff;
+                font-size: 12px;
+                font-weight: 600;
+                letter-spacing: 0.24px;
+            }
+
+            .reg__info{
+                color: #fff;
+                font-size: 12px;
+                font-weight: 300;
+                letter-spacing: 0.24px;
+            }
+        }
+
+        .left{
+            width: 35%;
+            align-items: center;
+            line-height: 150%;
+        }
+
+        .right{
+            justify-content: space-around;
+        }
+
+        /*RIGHT BLOCK*/
+
+        .ach__title{
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            margin: 0 auto;
+        }
+
+        .ach__container{
+            /*border: 1px solid green;*/
+            height: 100%;
+            padding: 15px 30px;
+
+            .ach__block{
+                /*border: 1px solid blue;*/
+                line-height: 150%;
+                display: inline-block;
+                margin: 8px;
+
+                .image{
+                    margin: 0 auto;
+                    width: 97px;
+                    height: 49px;
+                    border-radius: 5px;
+                    background: #3259A4;
+                }
+
+                .ach__subtitle{
+                    color: #fff;
+                    font-size: 10px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .column{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.list__container{
+    /*border: 1px solid red;*/
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    /*height: 700px;*/
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    position: relative;
+
+    .title{
+        color: #fff;
+        font-size: 16px;
+        font-weight: 500;
+        /*position: absolute;*/
+        text-align: right;
+        margin-bottom: 10px;
+    }
+
+    .products__container{
+        /*border-color: red;*/
+        border-radius: 5px;
+        background: #1C3135;
+        height: 300px;
+        overflow-y: scroll;
+        padding: 25px 20px;
+        line-height: 170%;
+        display: inline-block;
+
+        .product__block{
+            border-radius: 5px;
+            background: #3259A4;
+            display: inline-block;
+            padding: 0px 20px;
+            width: 508px;
+            margin-bottom: 15px;
+
+            .product__title{
+                display: flex;
+                justify-content: space-between;
+
+                .block__title{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+
+                .block__subtitle{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 400;
+                    text-align: center;
+                }
+            }
+
+            .title{
+                text-align: center;
+                position: relative;
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                margin-top: 15px;
+                padding-bottom: 8px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.50);;
+
+                .edit{
+                    position: absolute;
+                    right: 15px;
+                    text-align: right;
+                }
+            }
+        }
+
+        .product__lot{
+            /*border: 1px solid green;*/
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0px;
+            border-top: 1px solid rgba(255, 255, 255, 0.50);;
+
+            .product__name{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 400;
+            }
+
+            .product__price{
+                color: #fff;
+                font-size: 12px;
+                font-weight: 400;
+            }
+        }
+    }
+}
