@@ -54,7 +54,8 @@
                 <tr>
                     <td>#A00001</td>
                     <td>СДЕЛАЮ ПРЕВЬЮ ДЛЯ ВАШЕГО РОЛИКА</td>
-                    <td><div class="user__container">
+                    <td>
+                        <div class="user__container">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
                                 <circle cx="15" cy="15" r="15" fill="#D9D9D9"/>
                             </svg>
